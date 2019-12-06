@@ -35,6 +35,13 @@ public class ConvertPage extends BasePage {
 		PageFactory.initElements(driver, this);
 	}
 
+	/**
+	 * 
+	 * @param convertFrom text to be sent to the convert from input field
+	 * @param convertTo text to be sent to the convert to input field
+	 * @param amount text to be sent to amount field representing the amount for conversion
+	 * @throws InterruptedException
+	 */
 	public void convert(String convertFrom, String convertTo, String amount) throws InterruptedException {
 		fillText(queryFrom, convertFrom);
 		Thread.sleep(5000);
